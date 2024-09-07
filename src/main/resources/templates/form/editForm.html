@@ -19,20 +19,22 @@
     </div>
 
     <form action="item.html" th:action th:object="${item}" method="post">
+        <!--현재 버전-->
         <div>
             <label for="id">상품 ID</label>
             <input type="text" id="id" th:field="*{id}" class="form-control" readonly>
         </div>
         <div>
             <label for="itemName">상품명</label>
-            <input type="text" id="itemName" th:field="*{itemName}" class="form- control">
+            <input type="text" id="itemName" th:field="*{itemName}" class="form-control" readonly>
         </div>
         <div>
             <label for="price">가격</label>
-            <input type="text" id="price" th:field="*{price}" class="form-control"></div>
+            <input type="text" id="price" th:field="*{price}" class="form-control" readonly>
+        </div>
         <div>
             <label for="quantity">수량</label>
-            <input type="text" id="quantity" th:field="*{quantity}" class="form- control">
+            <input type="text" id="quantity" th:field="*{quantity}" class="form-control" readonly>
         </div>
 
         <hr class="my-4">
